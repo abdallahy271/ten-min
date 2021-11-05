@@ -16,7 +16,9 @@ function Home() {
 				<img className="chart-logo fade-in animation-delay__3 header__logo" src={logo}/>
 				<div className="fade-in fade-in animation-delay__3">
 					<h1 className="hero-title"></h1>
-					<h2 className="hero-subtitle">Simple yet effective Procastination Killer for Productive People</h2>
+					<h2 style={{marginTop:'30px'}} className="hero-subtitle">Simple yet effective Procastination Killer for Productive People</h2>
+					<h2 className="hero-subtitle">Get stuff done by planning tasks in <code style={{fontSize:'30px'}}>10-minute-blocks</code>  </h2>
+
 				</div>
 				<div className="hero-button-wrapper fade-in animation-delay__3">
 					<Link to='/plan' id="btn-1" className="button button__red" >
@@ -36,7 +38,7 @@ function Home() {
 							<span className="pill pill__new">InFocus Special!</span>
 							Task timer
 						</h3>
-						<p className="description">Custom timer that runs as you work through your tasks, and notifies you to take a break. </p>
+						<p className="description">Custom timer that keeps you on your feet as you solve 10-minute tasks one at a time. </p>
 					</div>
 					<div className="feature-chart feature-chart__right">
 						{/* <canvas id="mixed-chart" height="200" width="300"></canvas> */}
@@ -47,9 +49,9 @@ function Home() {
 					<div className="feature-text feature-text__pull-right">
 						<h3 className="subtitle">
 							<span className="pill pill__new">InFocus Special!</span>
-							Personal Journal
+							Progress Journal
 						</h3>
-						<p className="description">Write personalized daily experiences, and forge indelible memories on InFocus.</p>
+						<p className="description">Write personalized daily reflections of your progress and report improvements with InFocus.</p>
 					</div>
 					<div className="feature-chart feature-chart__left feature-chart__pull-right">
 					<img height="200" width="200" src="https://cdn1.iconfinder.com/data/icons/business-1-48/50/55-512.png" />
@@ -59,9 +61,9 @@ function Home() {
 					<div className="feature-text">
 						<h3 className="subtitle">
 							<span className="pill pill__new">InFocus Special!</span>
-							Set Goals!
+							Break It Down!
 						</h3>
-						<p className="description">Set Specific, Measurable, Actionable, Relevant and Time-bound Goals for your success.</p>
+						<p className="description">Work efficiently by setting Specific, Measurable, Tractable and 10-minute-long sub-tasks with InFocus.</p>
 					</div>
 					<div className="feature-chart feature-chart__right">
 					<img height="200" width="200" src="https://cdn2.iconfinder.com/data/icons/web-technology-2/128/Target-512.png" />

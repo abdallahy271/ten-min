@@ -38,32 +38,6 @@ function Header() {
                 </Link>
                 </div>
 
-                <Dropdown className={`drop ${pageClass === 'goals' ? 'plan' : ''}`}
-             onMouseEnter={() => setIsGoalHovered(true)}
-             onMouseLeave={() => setIsGoalHovered(false)}
-            //  onToggle={() => setIsGoalClicked(!isGoalClicked)}
-             onClick={() => history.push('/goals')}
-             show={isGoalClicked || isGoalHovered}>
-                <Dropdown.Toggle variant="success" id="dropdown-basic">
-                    Goals
-                </Dropdown.Toggle>
-
-                <Dropdown.Menu id="dropdown-wrapper">
-                    <Dropdown.Item className="dropdown-link" href="#/action-1">Daily Goals</Dropdown.Item>
-                    <Dropdown.Item href="#/action-2">Weekly Goals</Dropdown.Item>
-                    <Dropdown.Item href="#/action-3">Monthly Goals</Dropdown.Item>
-                </Dropdown.Menu>
-                </Dropdown> 
-
-                <div className={`header__option ${pageClass === 'notes' ? 'plan' : ''}`}>
-                <Link to='/notes'>
-                        <span className="header__optionLineTwo">
-                            Notes
-                        </span>
-                </Link>
-                </div>
-
-                
                 <div className='header__option'>
                     <Link to='/journals'>
                         <span className="header__optionLineTwo">
@@ -71,19 +45,11 @@ function Header() {
                         </span>
                     </Link>
                 </div>
-                
-                <div className={`header__option ${pageClass === 'book-list' ? 'plan' : ''}`}>
-                    <a href='https://book-list-a2c1c.web.app/Home'>
-                        <span className="header__optionLineTwo">
-                            Book List
-                        </span>
-                    </a>
-                </div>
 
                 <div className='header__option'>
-                    <a href='https://chat-app-f4581.web.app/'>
+                    <a target='_blank' href='https://www.themuse.com/advice/the-10minute-rule-it-seems-crazy-but-it-will-revolutionize-your-productivity'>
                         <span className="header__optionLineTwo">
-                            Community
+                            Literature
                         </span>
                     </a>
                 </div>

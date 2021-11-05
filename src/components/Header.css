@@ -2,7 +2,7 @@
     height: 60px;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     background: linear-gradient(
         130deg
         ,#ff7a18,#af002d 41.07%,#319197 76.05%);
@@ -67,7 +67,7 @@
         /* On small screens, we are no longer using row direction but column */
         margin-top: 130px;
         margin-bottom: 30px;
-
+        
         flex-direction: column;
         background-color: #131921;
         width: 100%;
@@ -120,18 +120,18 @@
 
 .header__nav {
     display:flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
     flex: 0.6;
-    /* padding: 0 80px; */
+    /* margin-left: -400px; */
+    padding-right: 100px;
 }
 
 .header__option {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-right: 120px;
     color: white;
 
 }

@@ -10,7 +10,7 @@ const Todo = ({todo, text, todos, setTodos}) => {
     const [ startOver, setStartOver ] = useState(false)
     const [ timerRunning, setTimerRunning ]  = useState(false);
     const [ colorChanger, setColorChanger ]  = useState("");
-    const [ timeLimit, setTimeLimit ]  = useState(30);
+    const [ timeLimit, setTimeLimit ]  = useState(600);
 
     const showclassName = showTime ? 'show' : 'hide'
     const deleteHandler = () => {
@@ -19,12 +19,10 @@ const Todo = ({todo, text, todos, setTodos}) => {
     const TIMES = {
         five: 5,
         five_min: 300,
+        ten: 10,
+        ten_min: 600,
         fifteen: 15,
         fifteen_min: 900,
-        thirty: 30,
-        thirty_min: 1800,
-        forty_five: 45,
-        forty_five_min: 2700
     }
 
     const completeHandler = () => {
@@ -117,13 +115,13 @@ const Todo = ({todo, text, todos, setTodos}) => {
                     <Button variant="contained" color='primary' className="time_btn" onClick={(e)=>{e.preventDefault();setTimerRunning(true)}}>
                     Begin
                     </Button>
-                    <Button className="time_btn" onClick={()=>setTimeLimit(TIMES.five_min)}variant="contained">{TIMES.five}</Button>
+                    <Button className="time_btn" onClick={()=>setTimeLimit(TIMES.five_min)}
+                    variant="contained">{TIMES.five}</Button>
+                    <Button className="time_btn" onClick={()=>setTimeLimit(TIMES.ten_min)}
+                    variant="outlined">{TIMES.ten}</Button>
                     <Button className="time_btn" onClick={()=>setTimeLimit(TIMES.fifteen_min)}
-                    variant="outlined">{TIMES.fifteen}</Button>
-                    <Button className="time_btn" onClick={()=>setTimeLimit(TIMES.thirty_min)}
-                    variant="contained">{TIMES.thirty}</Button>
-                    <Button className="time_btn" onClick={()=>setTimeLimit(TIMES.forty_five_min)}
-                    variant="outlined">{TIMES.forty_five}</Button>
+                    variant="contained">{TIMES.fifteen}</Button>
+           
                     </div>
             </div>
         </div>

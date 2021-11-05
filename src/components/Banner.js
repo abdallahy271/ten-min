@@ -32,9 +32,9 @@ function Banner() {
 
             </div>
             <div className='banner__info'>
-                <h1>Settle down and Reflect on your life</h1>
+                <h1>Reflect on your Progress</h1>
                 <h5>
-                    Find clarity and purpose in life with daily journaling, and be motivated all week long.
+                    Find clarity and purpose with daily journaling, and be motivated all week long.
                 </h5>
                 <Button variant='outlined' onClick={()=> history.push('/journal-0')}>
                     Super Sunday

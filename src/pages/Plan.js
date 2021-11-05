@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Form from '../components/Form';
 import TodoList from '../components/TodoList'
 import Header from  '../components/Header'
-import { Button } from '@material-ui/core';
+import { Button, Card } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 
 
@@ -89,9 +89,16 @@ useEffect(() => {
   return ( 
      <>
           <Header />
-          <header>
-            <h1>Start planning... </h1>
-          </header>
+          <Card style={{
+            padding: '50px',
+            margin: '0 300px',
+            backgroundColor: 'rgba(255, 255, 255, 0.1)',
+
+          }}>
+            <h2>1. Find a Task</h2>
+            <h2>2. Break into 10-minute sub-tasks</h2>
+            <h2>3. Use that Timer</h2>         
+          </Card>
           <Form 
           inputText={inputText} 
           setInputText={setInputText} 
