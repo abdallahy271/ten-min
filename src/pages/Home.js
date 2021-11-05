@@ -27,7 +27,7 @@ function Home() {
                         </div>
                         </Link>
 					
-					<a className="button button__black" href="https://github.com/abdallahy271/todo" id="btn-2" target="_blank">GitHub</a>
+					<a className="button button__black" href="https://github.com/abdallahy271/ten-min" id="btn-2" target="_blank">GitHub</a>
 				</div>
 			</div>
 			<hr/>
@@ -106,7 +106,7 @@ function Home() {
 
 			<div className="link-container fade-in animation-delay__3">
 				<h2 className="subtitle">
-					<a href="https://github.com/abdallahy271/todo" target="_blank">Find InFocus on GitHub</a>
+					<a href="https://github.com/abdallahy271/ten-min" target="_blank">Find InFocus on GitHub</a>
 				</h2>
 			</div>
 		</div>

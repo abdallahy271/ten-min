@@ -89,15 +89,23 @@ useEffect(() => {
   return ( 
      <>
           <Header />
+          <div id="wrapper"
+          style={{
+            padding: '0 30px',
+            margin: '0 auto',}}
+          >
           <Card style={{
             padding: '50px',
-            margin: '0 300px',
+            margin: '0 auto',
+            display: 'flex',
+            flexDirection:'column',
+            justifyContent:'right',
             backgroundColor: 'rgba(255, 255, 255, 0.1)',
 
           }}>
-            <h2>1. Find a Task</h2>
-            <h2>2. Break into 10-minute sub-tasks</h2>
-            <h2>3. Use that Timer</h2>         
+            <h2>1. Choose a Task. For example, a school assignment or project</h2>
+            <h2>2. Break task into 10-minute sub-tasks, and add them to the list</h2>
+            <h2>3. Use that Timer. <side>Happy Productivity!</side></h2>         
           </Card>
           <Form 
           inputText={inputText} 
@@ -113,7 +121,7 @@ useEffect(() => {
           todos={todos} 
           setTodos={setTodos} 
           filteredTodos={filteredTodos} />
-
+        </div>
           <div className="madeBy">
             <Link to={{ pathname: "https://ayusuf-sps-spring21.uc.r.appspot.com" }} target="_blank">
               <Button>Made with ❤️ by Yusuf Abdulmueez</Button>
